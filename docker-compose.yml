@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ionic:
+    build: .
+    container_name: ionic_container
+    ports:
+      - "8100:80"  # Servir l'application sur le port 8100
+    environment:
+      NODE_ENV: production
